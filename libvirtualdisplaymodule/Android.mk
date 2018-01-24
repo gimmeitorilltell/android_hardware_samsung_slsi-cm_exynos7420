@@ -31,7 +31,10 @@ LOCAL_C_INCLUDES := \
 	$(TOP)/hardware/samsung_slsi-cm/exynos/libhwc \
 	$(TOP)/hardware/samsung_slsi-cm/exynos/libhwcutils \
 	$(TOP)/hardware/samsung_slsi-cm/exynos/libexynosdisplay \
-	$(TOP)/hardware/samsung_slsi-cm/exynos/libvirtualdisplay
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libvirtualdisplay \
+	$(TOP)/frameworks/native/libs/arect/include \
+	$(TOP)/frameworks/native/libs/nativebase/include \
+	$(TOP)/frameworks/native/libs/nativewindow/include
 
 LOCAL_ADDITIONAL_DEPENDENCIES += \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
