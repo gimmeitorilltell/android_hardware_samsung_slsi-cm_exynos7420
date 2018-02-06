@@ -56,6 +56,9 @@ LOCAL_C_INCLUDES += \
 	$(TOP)/external/expat/lib \
 	$(TOP)/external/stlport/stlport
 
+LOCAL_ADDITIONAL_DEPENDENCIES += \
+	INSTALLED_KERNEL_HEADERS
+
 LOCAL_SRC_FILES:= \
 	ExynosCameraSensorInfo.cpp \
 	../../exynos/libcamera/common/ExynosCameraFrame.cpp \
@@ -120,6 +123,9 @@ LOCAL_C_INCLUDES += \
 	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/libcamera \
 	frameworks/native/include \
 	system/media/camera/include
+
+LOCAL_ADDITIONAL_DEPENDENCIES += \
+	INSTALLED_KERNEL_HEADERS
 
 LOCAL_SRC_FILES:= \
 	../../exynos/libcamera/common/ExynosCameraInterface.cpp
